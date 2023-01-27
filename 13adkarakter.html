@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function harfClick(){
+            let adsoyad = document.form1.txtName.value;
+            
+            for(let i=0; i<adsoyad.length;i++){
+                {
+                    uzunluk=adsoyad.length;
+                    sonkarakter=adsoyad[uzunluk-1];
+                    alert(adsoyad.charAt(1) + "\n" + adsoyad.charAt(2) + "\n" + sonkarakter);
+
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form1">
+        <input type="txt" name="txtName" value="">
+        <input type="button" name="btn1" value="Buton" onclick="harfClick();">
+    </form>
+    
+</body>
+</html>

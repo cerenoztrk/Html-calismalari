@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şekil</title>
+    <script language="JavaScript">
+
+        function Sekil() {
+
+            var sayi = document.form1.txtSayi.value;
+            var sekilID = document.form1.cmbSekil.value;
+            for (var i = 1; i <= sayi; i++) {
+                for (j = 1; j < i; j++) {
+                    if (sekilID == 1) {
+                        document.write("*");
+                    }
+                    if (sekilID == 2) {
+                        document.write("!");
+                    }
+                    if (sekilID == 3) {
+                        document.write("#");
+                    }
+                }
+                document.write("<br>");
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        Şekil seçiniz:
+        <select name="cmbSekil">
+            <option value="0">Lütfen seçiniz</option>
+            <option value="1">*</option>
+            <option value="2">!</option>
+            <option value="3">#</option>
+        </select>
+        <br><br>
+        Sayı giriniz:
+        <input type="text" name="txtSayi" size="20" value="">
+        <br><br>
+        <input type="button" name="btnSubmit" value="Gönder" onclick="Sekil();">
+    </form>
+</body>
+
+</html>

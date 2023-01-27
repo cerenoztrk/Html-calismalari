@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function CloseMe(){
+            window.opener.document.getElementById("txtName").value="Test";
+            window.opener.location.href="10pencere.html"; //kendisini açan sayfayı lokasyona göndermek için 
+            window.close();
+            
+            
+            
+        }
+    </script>
+</head>
+<body>
+    Test
+    <input type="button" name="btnW1" value="Kapat" onclick="CloseMe();">
+</body>
+</html>
